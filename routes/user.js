@@ -10,6 +10,9 @@ app.route('/')
 app.route('/signin')
   .post(controller.signin)
 
+app.route('/forgot')
+  .post(controller.forgot)
+
 // signup new user
 app.route('/signup')
   .post(controller.signup)
