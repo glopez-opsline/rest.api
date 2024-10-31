@@ -10,8 +10,13 @@ app.route('/')
 app.route('/signin')
   .post(controller.signin)
 
+// forgot user
 app.route('/forgot')
   .post(controller.forgot)
+
+// validate forgot user by id
+app.route('/forgot/validate/:id')
+  .post(controller.forgot_validate)
 
 // signup new user
 app.route('/signup')
